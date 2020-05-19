@@ -46,7 +46,7 @@ recentLines.on('child_added', function (data) {
   }
 });
 
-let colors = ["#ffffff", "#111111", "#4AC3BE", "#FCC0C0", "#4C657E", "#BEF2FF", "#1BF5AF", "#FDC8AA", "#FF304F", "#118DF0", "#7DB9B3", "#5A5AFF", "#653481"];
+let colors = ["#111111", "#4AC3BE", "#FCC0C0", "#4C657E", "#BEF2FF", "#1BF5AF", "#FDC8AA", "#FF304F", "#118DF0", "#7DB9B3", "#5A5AFF", "#653481"];
 
 let colors3 = ["#E6CAA9", "#191718", "#342A20", "#E73E32", "#5A905D", "#3A81CB", "#FCEF4F", "#ECD6C0", "#ED87A6"];
 

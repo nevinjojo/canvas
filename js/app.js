@@ -70,7 +70,7 @@ function setup() {
   // strokeJoin(ROUND);
   $("#email").click(function () {
     if (emailClicked) {
-      $(this).text("info@psanches.com");
+      $(this).text("nevin.jojo@icloud.com");
       emailClicked = !emailClicked;
     } else {
       //console.log("clicked");

@@ -12,6 +12,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c7MTKYfyNOioHCCSQdzNsXj9HS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,6 +23,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -69,5 +73,9 @@
       <screen x="0" y="23" width="1920" height="1000" />
     </state>
     <state x="1040" y="188" key="#Project_Structure/0.23.1920.1000@0.23.1920.1000" timestamp="1589875193088" />
+    <state x="618" y="271" width="683" height="504" key="find.popup" timestamp="1589876411647">
+      <screen x="0" y="23" width="1920" height="1000" />
+    </state>
+    <state x="618" y="271" width="683" height="504" key="find.popup/0.23.1920.1000@0.23.1920.1000" timestamp="1589876411647" />
   </component>
 </project>

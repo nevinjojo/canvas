@@ -2,7 +2,8 @@ body {
   margin: 0;
   background: #fcfcfc;
   color: #141414;
-  text-rendering: geometricPrecision
+  text-rendering: geometricPrecision;
+  cursor: url("../images/pencil.png") 0 22, auto;
 }
 
 *.unselectable {
@@ -11,6 +12,7 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow-x: hidden;
 }
 
 #contentContainer {
@@ -41,24 +43,28 @@ body {
 
 #paintBoard {
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   bottom: 30px;
   left: 30px;
 }
 
 #paintBoard a {
-  display: block;
+  display: inline-block;
   width: 30px;
   height: 30px;
   border-radius: 20px;
-  margin: 10px 0 0 0;
+  margin: 0 10px 0 0;
 }
 
-.body-link, .chaos-toggle, .chaos-text, .w-button, .email-link {
+.body-link, .chaos-toggle, .chaos-text, .w-button, .email-link, .footer, .header {
   position: relative;
   z-index: 3;
   pointer-events: all;
   cursor: pointer !important;
+}
+
+.twitter-link {
+  cursor: url("../images/twitter.png") 0 32, auto !important;
 }
 
 .chaos-toggle {
@@ -118,7 +124,7 @@ body {
 }
 
 .chaos-toggle input:checked + i {
-  background-color: #4BD763;
+  background-color: #9AF2E2;
 }
 
 .chaos-toggle input:checked + i::before {

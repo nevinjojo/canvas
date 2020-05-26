@@ -1,6 +1,6 @@
 let previousDrawings = []; // List of drawings fetched from Firebase
 let currentDrawings = []; // List of drawings from current session
-let speed = 25; // Speed at which the previous drawings are drawn
+let speed = 35; // Speed at which the previous drawings are drawn
 let history = 400; // Number of previous drawings drawn on canvas
 let primaryKey = 0; // Key of the DB document with the drawings
 let db; // Firebase Database

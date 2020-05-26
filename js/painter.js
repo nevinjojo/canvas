@@ -11,6 +11,8 @@ $('#chaos').on('click', function () {
   previousDrawingsTriggered = !previousDrawingsTriggered;
   if (!previousDrawingsTriggered) {
     clear();
+  } else {
+    updateElementPositions();
   }
 });
 
@@ -27,3 +29,15 @@ function makeUnselectable(node) {
 }
 
 makeUnselectable(document.getElementById("contentContainer"));
+
+
+// List of elements to be styled
+function updateElementPositions() {
+  let elemsClassList = ['columns-main', 'w-row', 'w-container', 'text-with-image', 'boring', 'about-column', 'contact'];
+  for (let className of elemsClassList) {
+    let elems = document.getElementsByClassName(className);
+    for (let i = 0; i < elems.length; i++) {
+      elems[i].style.zIndex = '3';
+    }
+  }
+}

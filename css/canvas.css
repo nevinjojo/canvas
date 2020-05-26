@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  background: #fcfcfc;
+  color: #141414;
+  text-rendering: geometricPrecision
+}
+
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#contentContainer {
+  height: auto;
+  z-index: 2;
+  font-size: 16px;
+  color: #141414;
+}
+
+#brush {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 0;
+}
+
+#canvas {
+  position: fixed;
+  top:0;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+
+#paintBoard {
+  position: fixed;
+  z-index: 2;
+  bottom: 30px;
+  left: 30px;
+}
+
+#paintBoard a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 10px 0 0 0;
+}
+
+.body-link, .chaos-toggle, .chaos-text, .w-button, .email-link {
+  position: relative;
+  z-index: 3;
+  pointer-events: all;
+  cursor: pointer !important;
+}
+
+.chaos-toggle {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.chaos-toggle i {
+  position: relative;
+  display: inline-block;
+  margin-right: .5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+
+.chaos-toggle i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+
+.chaos-toggle i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.chaos-toggle:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+
+.chaos-toggle:active input:checked + i::after {
+  transform: translate3d(16px, 2px, 0);
+}
+
+.chaos-toggle input {
+  display: none;
+}
+
+.chaos-toggle input:checked + i {
+  background-color: #4BD763;
+}
+
+.chaos-toggle input:checked + i::before {
+  transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+
+.chaos-toggle input:checked + i::after {
+  transform: translate3d(22px, 2px, 0);
+}
+
+
+@media (max-width: 767px) {
+  canvas {
+    display: none;
+  }
+
+  #paintBoard a {
+    display: none;
+  }
+
+  #paintBoard button {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}

@@ -2,14 +2,16 @@
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener('click', function (event) {
     strokeSetting.color = this.style.backgroundColor;
-    console.log("sdvsdvds");
     event.preventDefault();
   })
 });
 
 // Start or stop Chaos Mode when clicked
-document.getElementById('chaos').addEventListener('click', function (event) {
+$('#chaos').on('click', function () {
   previousDrawingsTriggered = !previousDrawingsTriggered;
+  if (!previousDrawingsTriggered) {
+    clear();
+  }
 });
 
 // Make content inside website unselectable to avoid undesired behaviour while drawing on them
@@ -23,4 +25,5 @@ function makeUnselectable(node) {
     child = child.nextSibling;
   }
 }
+
 makeUnselectable(document.getElementById("contentContainer"));

@@ -7,7 +7,7 @@ let db; // Firebase Database
 let previousDrawingsTriggered = false;
 let count = 0;
 let endOfTheLine = 1;
-let brushStrokeSize = 7;
+let brushStrokeSize = 5;
 let strokeSetting, brush;
 
 fetchPreviousDrawings();

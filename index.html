@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Canvas</title>
-  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Nevin Jojo | Software Engineer</title>
+
+  <!-- Meta Data -->
+  <meta charset="utf-8">
+  <meta content="I’m a software engineer who builds immersive and user-friendly applications that users love."
+        name="description">
+  <meta content="Nevin Jojo | Software Engineer" property="og:title">
+  <meta content="I’m a software engineer who builds immersive and user-friendly applications that users love."
+        property="og:description">
+  <meta content="Nevin Jojo | Software Engineer" property="twitter:title">
+  <meta content="I’m a software engineer who builds immersive and user-friendly applications that users love."
+        property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <!-- Favicon -->
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+
+  <!-- Stylesheets -->
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/canvas.css">
+
+  <!-- Script files, and libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/load.js"></script>
 
   <!-- Firebase, Jquery, P5.js-->
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
@@ -12,230 +39,255 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
 </head>
 
-<body>
+<body class="body">
 <script src="js/app.js"></script>
 
 <div id="brush"></div>
 
+<!-- Website Content -->
 <div id="contentContainer">
-  <div id="drag" class="module about">
-    <h1 style="font-size: 50px">Nevin Jojo <br>Portfolio</h1>
+  <!-- Header -->
+  <div data-collapse="none" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+    <div class="container navigation w-container">
+      <div class="name">Nevin Jojo</div>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <label class="chaos-toggle">
+          <input type="checkbox">
+          <i id="chaos"></i>
+        </label>
+        <h4 class="chaos-text">Enable Chaos</h4>
+      </nav>
+    </div>
   </div>
-  <section id="right" class="section-content">
-    <div class="header">
-      <a href="https://www.nevinjojo.com" class="logo" title="Nevin Jojo"><img src="images/logo/logo.svg" height="40"
-                                                                               alt="Nevin Jojo"></a>
 
-      <!-- Containers to position circles underneath hamburger icon -->
-      <div class="cd-overlay-nav">
-        <span></span>
+  <!-- Intro -->
+  <div class="section">
+    <div class="landing-container w-container">
+      <div class="columns-main w-row">
+        <!-- Intro Description -->
+        <div class="column-left w-col w-col-7">
+          <div class="intro-box">
+            <div class="intro">I&#x27;m a </div>
+            <div class="text-with-image"><img src="images/Vector-1.svg" width="393" alt="" class="circle">
+              <div class="intro">  software engineer    </div>
+            </div>
+            <div class="intro">who builds </div>
+            <div class="intro">immersive </div>
+            <div class="intro">and </div>
+            <div class="intro">user-friendly </div>
+            <div id="imagetext" class="text-with-image">
+              <div class="intro">appplications </div>
+              <img src="images/Vector-2.svg" width="249" alt="" class="squiggle"></div>
+            <div class="intro">that users love.</div>
+            <h4 class="intro-description">Check out what <a href="https://www.notion.so/nevinjojo/Booket-List-89126756fcd64cd3ae2c16c8ccf9cc05" target="_blank" class="body-link">books I’m reading</a>,
+              find me on <a href="https://twitter.com/nevin_jojo" target="_blank" class="body-link">Twitter</a>, or
+              on <a href="https://www.linkedin.com/in/nevinjojo/" target="_blank" class="body-link">LinkedIn</a>,
+              or just <a href="mailto:nevinjojo98@gmail.com?subject=Website%20Inquiry" class="body-link">send me an email</a> saying hi.</h4>
+          </div>
+        </div>
+        <!-- End of Intro Description -->
+
+        <!-- Intro Illustration -->
+        <div class="column-right w-col w-col-5">
+          <div class="illustration-block"><img src="images/Frame.svg" width="347" alt="Nevin Jojo Illustration" class="illustration"></div>
+        </div>
+        <!-- End of Intro Illustration -->
       </div>
-
-      <div class="cd-overlay-content">
-        <span></span>
-      </div>
-
-      <a href="#" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
     </div>
+  </div>
+  <!-- End of Intro -->
 
-    <div class="project-container">
-
-      <div class="row">
-        <div class="div-gap"></div>
-        <div class="div-project-description">
-          <h3 class="intro-text project-intro"><b>Projects</b></h3>
+  <!-- Project -->
+  <div id="projects" class="section">
+    <!-- FocusFox -->
+    <div class="project-container w-container">
+      <div class="columns w-row">
+        <div class="text-column-left w-col w-col-5">
+          <div class="project-wrap-2">
+            <h1 class="header">FocusFox</h1>
+            <h4 class="description">An online markdown text editor that helps thousands of users stay calm and focused.</h4>
+            <a href="https://www.focusfox.co" target="_blank" class="button w-button">Visit Website</a>
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-image">
-          <a href="https://www.focusfox.co/" target="_blank" rel="noopener">
-            <img src="images/projects/focusfox/preview3.jpg" class="project-image" alt="Focusfox Preview">
-          </a>
-        </div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>FocusFox</b></h2>
-          <br>
-          <h3 class="project-description">A free online markdown editor with background sounds to help you focus.<br></h3>
-          <a href="https://www.focusfox.co/" target="_blank" rel="noopener"><h4 class="project-link link">Visit
-            website</h4></a>
-        </div>
-      </div>
-
-      <hr class="break">
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>AppIdeas.co</b></h2>
-          <br>
-          <h3 class="project-description">A generator that returns absurd ideas for your "next million dollar"
-            app.<br><br>This is an afternoon project completed in collaboration with <a class="link"
-                                                                                        href="https://www.nikolaibain.com"
-                                                                                        target="_blank" rel="noopener">Nikolai
-              Bain</a>.</h3>
-          <a href="https://www.appideas.co/" target="_blank" rel="noopener"><h4 class="project-link link">Visit
-            website</h4></a>
-        </div>
-
-        <div class="div-project-image">
-          <a href="https://www.appideas.co/" target="_blank" rel="noopener">
-            <img src="images/projects/appideas/preview.jpeg" class="project-image" alt="App Ideas Preview">
+        <div class="project-column w-col w-col-7">
+          <a href="https://www.focusfox.co" target="_blank" class="w-inline-block">
+            <img src="images/Group-75.png"
+                 alt="Focus Fox Screenshot"
+                 srcset="images/Group-75-p-500.png 500w, images/Group-75.png 601w"
+                 sizes="(max-width: 479px) 91vw, (max-width: 724px) 83vw, (max-width: 767px) 601px, (max-width: 991px) 53vw, (max-width: 1279px) 50vw, 601px"
+                 class="project-image">
           </a>
         </div>
       </div>
-
-      <hr class="break">
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-image">
-          <a href="https://www.thedesignindex.co/" target="_blank" rel="noopener">
-            <img src="images/projects/designindex/preview.jpg" class="project-image" alt="The Design Index Preview">
-          </a>
-        </div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>The Design Index</b></h2>
-          <br>
-          <h3 class="project-description">A hand-picked directory of the best design resources and tools.</h3>
-          <a href="https://www.thedesignindex.co/" target="_blank" rel="noopener"><h4 class="project-link link">Visit
-            website</h4></a>
-        </div>
-      </div>
-
-      <hr class="break">
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>Burger Brick Road</b></h2><br>
-          <h3 class="project-description">A Wellington On A Plate project to find the top 10 burgers that are suited to
-            your personal location and price range.<br><br>Designed and developed as part of Create Camp Wellington 2019.
-          </h3>
-          <br>
-          <a href="https://nevinjojo.github.io/burgerbrickroad" target="_blank" rel="noopener"><h4
-              class="project-link link">visit website</h4></a>
-        </div>
-
-        <div class="div-project-image">
-          <a href="https://nevinjojo.github.io/burgerbrickroad" target="_blank" rel="noopener">
-            <img src="images/projects/burgerbrickroad/preview" class="project-image" alt="Burger Brick Road Preview">
-          </a>
-        </div>
-      </div>
-
-      <hr class="break">
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-image">
-          <a href="https://www.tawacollege.school.nz/" target="_blank" rel="noopener">
-            <img src="images/projects/tawacollege/preview" class="project-image" alt="Tawa College Preview">
-          </a>
-        </div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>Tawa College</b></h2>
-          <br>
-          <h3 class="project-description">The official Tawa College website.</h3>
-          <a href="https://www.tawacollege.school.nz/" target="_blank" rel="noopener"><h4 class="project-link link">Visit
-            website</h4></a>
-        </div>
-      </div>
-
-      <hr class="break">
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>Allocated</b></h2><br>
-          <h3 class="project-description">An iOS budgeting app to effortlessly keep track of your weekly
-            allocations.<br><br>Designed and developed in collaboration with <a class="link"
-                                                                                href="https://www.nikolaibain.com"
-                                                                                target="_blank" rel="noopener">Nikolai
-              Bain</a>.</h3>
-          <br>
-          <a href="https://github.com/nevinjojo/allocated" target="_blank" rel="noopener"><h4 class="project-link link">
-            GitHub</h4></a>
-        </div>
-
-        <div class="div-project-image">
-          <a href="https://github.com/nevinjojo/allocated" target="_blank" rel="noopener">
-            <img src="images/projects/allocated/preview" class="project-image" alt="Burger Brick Road Preview">
-          </a>
-        </div>
-      </div>
-
-      <hr class="break">
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-image">
-          <a href="https://github.com/nevinjojo/project_mirror_mirror" target="_blank" rel="noopener">
-            <img src="images/projects/mirrormirror/preview" class="project-image" alt="Tawa College Preview">
-          </a>
-        </div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>Mirror Mirror, On The Wall..</b></h2>
-          <br>
-          <h3 class="project-description">A smart mirror that displays date, time, weather and news headlines. Built using
-            Raspberry Pi, an LCD Monitor, and a two-way mirror.<br><br>Developed in collaboration with <a class="link"
-                                                                                                          href="http://jamesw.bio/"
-                                                                                                          target="_blank"
-                                                                                                          rel="noopener">James
-              Wrigley</a>.</h3>
-          <br>
-          <a href="https://github.com/nevinjojo/project_mirror_mirror" target="_blank" rel="noopener"><h4
-              class="project-link link">GitHub</h4></a>
-        </div>
-      </div>
-
-      <hr class="break">
-
-      <div class="row">
-        <div class="div-gap"></div>
-
-        <div class="div-project-description">
-          <h2 class="project-title"><b>Hexavoid</b></h2><br>
-          <h3 class="project-description">An endless space themed game where the goal is to fly fast and avoid
-            obstacles!<br><br>Made using Processing.js</h3>
-          <br>
-          <a href="https://github.com/nevinjojo/Hexavoid-Game" target="_blank" rel="noopener"><h4
-              class="project-link link">Github</h4></a>
-        </div>
-
-        <div class="div-project-image">
-          <a href="https://github.com/nevinjojo/Hexavoid-Game" target="_blank" rel="noopener">
-            <img src="images/projects/hexavoid/preview" class="project-image" alt="Burger Brick Road Preview">
-          </a>
-        </div>
-      </div>
-
-      <hr class="break">
-
     </div>
-  </section>
+    <!-- End of FocusFox -->
+
+    <!-- The Design Index -->
+    <div class="project-container w-container">
+      <div class="columns w-row">
+        <div class="project-column w-col w-col-7">
+          <a href="https://www.thedesignindex.co" target="_blank" class="w-inline-block">
+          <img src="images/Group-76.png"
+               alt="The Design Index"
+               srcset="images/Group-76-p-500.png 500w, images/Group-76.png 578w"
+               sizes="(max-width: 479px) 91vw, (max-width: 704px) 82vw, (max-width: 767px) 578px, (max-width: 991px) 53vw, (max-width: 1279px) 50vw, 578px"
+               class="project-image"></a>
+        </div>
+
+        <div class="text-column-right w-col w-col-5">
+          <div class="project-wrap-2">
+            <h1 class="header">The Design Index</h1>
+            <h1 class="description">Curating the best resources and tools for designers to work better and smarter.</h1>
+            <a href="https://www.thedesignindex.co" target="_blank" class="button w-button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of The Design Index -->
+
+    <!-- Allocated -->
+    <div class="project-container w-container">
+      <div class="columns w-row">
+        <div class="text-column-left w-col w-col-5">
+          <div class="project-wrap-2">
+            <h1 class="header">Allocated</h1>
+            <h4 class="description">An iOS budgeting app to effortlessly keep track of your weekly allocations.</h4>
+            <a class="button inactive w-button">In Progress</a>
+          </div>
+        </div>
+
+        <div class="project-column w-col w-col-7">
+          <a href="#" class="w-inline-block">
+            <img src="images/Group-77.png"
+                 alt="Allocated App Screens"
+                 srcset="images/Group-77-p-500.png 500w, images/Group-77.png 571w"
+                 sizes="(max-width: 479px) 91vw, (max-width: 696px) 82vw, (max-width: 767px) 571px, (max-width: 991px) 53vw, (max-width: 1279px) 50vw, 571px"
+                 class="project-image no-hover">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of Allocated -->
+
+    <!-- Tawa College -->
+    <div class="project-container w-container">
+      <div class="columns w-row">
+        <div class="project-column w-col w-col-7">
+          <a href="https://www.tawacollege.school.nz" target="_blank" class="w-inline-block">
+            <img src="images/Group-78.png"
+                 alt="Tawa College Homepage"
+                 srcset="images/Group-78-p-500.png 500w, images/Group-78.png 577w"
+                 sizes="(max-width: 479px) 91vw, (max-width: 703px) 82vw, (max-width: 767px) 577px, (max-width: 991px) 53vw, (max-width: 1279px) 50vw, 577px"
+                 class="project-image">
+          </a>
+        </div>
+
+        <div class="text-column-right w-col w-col-5">
+          <div class="project-wrap-2">
+            <h1 class="header">Tawa College</h1>
+            <h1 class="description">Designed the official Tawa College website.</h1>
+            <a href="https://www.tawacollege.school.nz" target="_blank" class="button w-button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Tawa College -->
+
+    <!-- App Ideas -->
+    <div class="project-container w-container">
+      <div class="columns w-row">
+        <div class="text-column-left w-col w-col-5">
+          <div class="project-wrap-2">
+            <h1 class="header">App Ideas</h1>
+            <h4 class="description">A generator designed in a day that suggests absurd ideas for your next app.<br></h4>
+            <a href="https://www.appideas.co" target="_blank" class="button w-button">Visit Website</a>
+          </div>
+        </div>
+
+        <div class="project-column w-col w-col-7">
+          <a href="https://www.appideas.co" target="_blank" class="w-inline-block">
+            <img src="images/Group-79.png"
+                 alt="App Ideas Homepage"
+                 srcset="images/Group-79-p-500.png 500w, images/Group-79.png 577w"
+                 sizes="(max-width: 479px) 91vw, (max-width: 703px) 82vw, (max-width: 767px) 577px, (max-width: 991px) 53vw, (max-width: 1279px) 50vw, 577px"
+                 class="project-image">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of App Ideas -->
+  </div>
+  <!-- End of Project -->
+
+  <!-- About Me -->
+  <div id="about" class="section">
+    <div class="text-container w-container">
+      <div id="imagetext" class="text-with-image">
+        <div class="intro">About Me</div>
+        <img src="images/Boring.svg" width="113" alt="Text stating 'boring'" class="boring">
+      </div>
+
+      <div class="columns-text w-row">
+        <div class="about-column w-col w-col-6">
+          <h4 class="about">I am a software engineering intern at ANZ where I focus on developing the goMoney mobile
+            banking application. I have a background in mobile development, web design, backend development, analysis,
+            and testing. I enjoy collaborating with designers and developers in collectively building user-friendly
+            interfaces.<br><br>
+            Currently, I am teaching myself to program in Swift to develop an iOS budgeting app. I&#x27;m
+            a self-proclaimed movie lover, who loves Wes Anderson films. I have a passion for traveling and an obsession
+            over dogs. I am a programmer, an optimist, and a space enthusiast who&#x27;s looking to take on the world
+            one challenge at a time.</h4>
+        </div>
+
+        <div class="about-column w-col w-col-6">
+          <h4 class="about">In addition to my development work, I am the co-founder and vice-president of the New Zealand
+            Students&#x27; Space Association where we focus on empowering students who are passionate about being part
+            of the New Zealand space scene.<br><br>
+            When not online, I can be found at bootcamps and Meetup events, learning
+            about the latest updates in the world of technology, or skating around the Wellington waterfront on a good
+            day.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of About Me -->
+
+  <!-- Contact -->
+  <div id="contact" class="section">
+    <div class="text-container w-container">
+      <h1 class="header">Send me <a href="mailto:nevinjojo98@gmail.com?subject=Website%20Inquiry" class="email-link">an email</a></h1>
+    </div>
+  </div>
+  <!-- End of Contact -->
+
+  <!-- Footer -->
+  <div id="footer" class="section footer">
+    <div class="text-container footer w-container">
+      <h4 class="about" style="font-size: 16px">
+        Website designed by
+        <a href="https://www.nikolaibain.com/" target="_blank" class="body-link">Nikolai Bain</a>
+        and developed by Nevin Jojo.<br>© 2020 all rights reserved.</h4>
+    </div>
+  </div>
+  <!-- End of Footer -->
 </div>
+<!-- End of Website Content -->
 
+<!-- Canvas PaintBoard -->
 <nav id="paintBoard">
-  <button><a id="chaos">Enable Chaos</a></button>
   <a href="#" style="background-color: #FE8A8A"></a>
   <a href="#" style="background-color: #9AF2E2"></a>
   <a href="#" style="background-color: #AEDFFD"></a>
   <a href="#" style="background-color: #050505"></a>
 </nav>
+<!-- End of Canvas PaintBoard -->
 
+<!-- Scripts to be loaded after elements are loaded -->
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ec075eeec1abbe5fcfaf110"
+        type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
 <script src="js/painter.js"></script>
 </body>
 </html>

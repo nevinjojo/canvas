@@ -42,14 +42,14 @@ body {
   width: 100%;
 }
 
-nav {
+#paintBoard {
   position: fixed;
   z-index: 2;
   bottom: 30px;
   left: 30px;
 }
 
-nav a {
+#paintBoard a {
   display: block;
   width: 30px;
   height: 30px;
@@ -62,11 +62,11 @@ nav a {
     display: none;
   }
 
-  nav a {
+  #paintBoard a {
     display: none;
   }
 
-  nav button {
+  #paintBoard button {
     display: none;
   }
 }

@@ -1,0 +1,12 @@
+# One year for image files
+<FilesMatch "\.(ico|jpg|svg|png|jpeg)$">
+Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+# 15 days for css and js
+<FilesMatch "\.(js|css)$">
+Header set Cache-Control "max-age=1296000, public"
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

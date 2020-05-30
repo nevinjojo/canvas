@@ -11,8 +11,10 @@ $('#chaos').on('click', function () {
   previousDrawingsTriggered = !previousDrawingsTriggered;
   if (!previousDrawingsTriggered) {
     clear();
+    document.getElementsByClassName('disclaimer')[0].style.display = 'none';
   } else {
     updateElementPositions();
+    document.getElementsByClassName('disclaimer')[0].style.display = 'block';
   }
 });
 
@@ -33,7 +35,7 @@ makeUnselectable(document.getElementById("contentContainer"));
 
 // List of elements to be styled
 function updateElementPositions() {
-  let elemsClassList = ['columns-main', 'w-row', 'w-container', 'text-with-image', 'boring', 'about-column', 'contact'];
+  let elemsClassList = ['columns-main', 'w-row', 'w-container', 'text-with-image', 'boring', 'about-column', 'contact', 'disclaimer'];
   for (let className of elemsClassList) {
     let elems = document.getElementsByClassName(className);
     for (let i = 0; i < elems.length; i++) {

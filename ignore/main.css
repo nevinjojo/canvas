@@ -129,7 +129,7 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 110vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -475,7 +475,8 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 120px;
+  height: 140px;
+  margin-top: -10px;
   max-width: 1140px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -886,12 +887,6 @@ h1 {
 
 @font-face {
   font-family: 'Publicsans';
-  src: url('../fonts/PublicSans-Bold.ttf') format('truetype'), url('../fonts/PublicSans-ExtraBold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Publicsans';
   src: url('../fonts/PublicSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
@@ -922,12 +917,6 @@ h1 {
 }
 @font-face {
   font-family: 'Publicsans';
-  src: url('../fonts/PublicSans-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Publicsans';
   src: url('../fonts/PublicSans-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
@@ -940,12 +929,6 @@ h1 {
 }
 @font-face {
   font-family: 'Publicsans';
-  src: url('../fonts/PublicSans-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Publicsans';
   src: url('../fonts/PublicSans-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
@@ -955,18 +938,6 @@ h1 {
   src: url('../fonts/PublicSans-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
-}
-@font-face {
-  font-family: 'Publicsans';
-  src: url('../fonts/PublicSans-ThinItalic.ttf') format('truetype');
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Publicsans';
-  src: url('../fonts/PublicSans-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
 }
 @font-face {
   font-family: 'Publicsans';
